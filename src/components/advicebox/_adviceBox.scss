@@ -1,0 +1,77 @@
+.adviceBox-wrap {
+  width: 50%;
+  background-color: hsl(218, 16%, 27%);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  padding: 2rem 1.2rem;
+  border-radius: 1.5rem;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  @include respond(ten) {
+    width: 55%;
+  }
+  @include respond(nine) {
+    width: 60%;
+  }
+  @include respond(eight) {
+    width: 65%;
+  }
+  @include respond(seven) {
+    width: 70%;
+  }
+  @include respond(six) {
+    width: 75%;
+  }
+  @include respond(five) {
+    width: 82%;
+  }
+}
+
+.adviceBox {
+  margin-bottom: -4rem;
+  padding: 0 3rem;
+
+  &__number {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: hsl(150, 100%, 66%);
+  }
+
+  &__quote {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 150%;
+    padding: 2.4rem 0;
+  }
+
+  &__divider {
+    img {
+      width: 85%;
+      margin: auto;
+    }
+  }
+
+  &__dice {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1.1rem 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0 1rem transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 1.2rem hsl(150, 100%, 66%);
+      filter: brightness(1.1);
+    }
+
+    img {
+      margin-bottom: -0.4rem;
+    }
+  }
+}
